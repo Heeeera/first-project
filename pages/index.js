@@ -14,7 +14,7 @@ export default function Home() {
       <section className={utilStyles.headingMd}>
         <p>안녕하세요. 저의 사이트에 오신 것을 환영합니다.</p>
         <p>👋👋👋</p>
-        <div className={utilStyles.button}>{menu.map(idx => <Button name={idx}/>)}</div>
+        <div className={utilStyles.button}>{menu.map(idx => <Button key={idx} name={idx}/>)}</div>
       </section>
     </Layout>
   );

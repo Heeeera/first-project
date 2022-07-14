@@ -5,7 +5,7 @@ import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
 const name = 'Heera Choi';
-export const siteTitle = 'Next.js Sample Website';
+export const siteTitle = 'Heera Choi';
 
 export default function Layout({ children, home }) {
   return (
@@ -26,7 +26,7 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header}>
-        {home ? (
+        {home ? (         
           <>
             <Image
               priority

@@ -3,6 +3,7 @@ import Image from 'next/image';
 import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
+import profile from '../public/profile.jpg';
 
 const name = 'Heera Choi';
 export const siteTitle = 'Heera Choi';
@@ -30,7 +31,7 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/public/profile.jpg"
+              src={profile}
               className={utilStyles.borderCircle}
               height={144}
               width={144}

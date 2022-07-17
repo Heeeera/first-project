@@ -5,54 +5,48 @@ import sea from '../public/main_sea.jpg';
 import musical from '../public/main_musical.jpg';
 import utilStyles from '../styles/utils.module.css';
 import Button from '../components/Button';
-
+import Layout from '../components/layout';
 
 function Favorite() {
-    // const [Height, setHeight] = useState(null); 
-
-    // useEffect(() => {
-    //     setHeight(window.innerHeight-40);
-    // }, []);
-
     return (
-        <div style={{width: '80%', margin: 'auto'}}>
-            <div style={{height:'100px'}} className={utilStyles.favContainer}>
-                <div> 🎶좋아하는 것 </div>
+        <div style={{margin: '0 auto 0', minHeight: '100vh', maxWidth: '80vw'}}>
+            <div style={{minHeight:'15vh'}} className={utilStyles.favContainer}>
+                <div> 🎶Favorites </div>
             </div>
-            <div style={{height:'500px'}} className={utilStyles.favContainer}>
+            <div style={{minHeight:'60vh'}} className={utilStyles.favContainer}>
                 <div className={utilStyles.imgContainer}>
                     <Image
                         src={food}
                         className={utilStyles.borderCircle}
-                        height={256}
-                        width={256}
+                        height={225}
+                        width={225}
                         alt="food"
                     />
-                    <div className={utilStyles.txtContainer}><div>맛집</div><div>🍽️</div></div>
+                    <div className={utilStyles.txtContainer}><div>Food</div><div>🍽️</div></div>
                 </div>
                 <div className={utilStyles.imgContainer}>
                     <Image 
                         src={musical}
                         className={utilStyles.borderCircle}
-                        height={256}
-                        width={256}
+                        height={225}
+                        width={225}
                         alt="musical"
                     />
-                    <div className={utilStyles.txtContainer}><div>뮤지컬</div><div>💃🕺</div></div>
+                    <div className={utilStyles.txtContainer}><div>Musical</div><div>💃🕺</div></div>
                 </div>
                 <div className={utilStyles.imgContainer}>
                     <Image
                         src={sea}
                         className={utilStyles.borderCircle}
-                        height={256}
-                        width={256}
+                        height={225}
+                        width={225}
                         alt="sea"
                     />
-                    <div className={utilStyles.txtContainer}><div>바다</div><div>🌊</div></div>
+                    <div className={utilStyles.txtContainer}><div>Sea</div><div>🌊</div></div>
                 </div>
             </div>
             <div className={utilStyles.favContainer}>
-                <Button name="메인으로" url="/"/>
+                <Button name="Home" url="/"/>
             </div>
         </div>
     );

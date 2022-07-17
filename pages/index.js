@@ -19,7 +19,7 @@ export default function Home() {
         <section className={utilStyles.headingMd}>
           <p>Hello, Welcome to my home!</p>
           <p>👋👋👋</p>
-          <div style={{paddingBottom: '20px'}} className={utilStyles.button}>{menu.map((data, idx) => <Button key={idx} name={data} url={url[idx]}/>)}</div>
+          <div style={{paddingBottom: '20px'}}>{menu.map((data, idx) => <Button key={idx} name={data} url={url[idx]}/>)}</div>
           <Link href="https://github.com/Heeeera" passHref>
             <a style={{paddingTop:'10px'}}><Image src={gitLogo} height='49' width='49' alt="git"/></a>
           </Link>

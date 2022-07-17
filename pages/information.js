@@ -19,7 +19,7 @@ function Information() {
                     <div>💻 Python, Javascript, HTML, CSS</div>
                     <div>📽️ Premiere Pro, After Effects</div>
                 </section>
-                <div className={utilStyles.button}><Button name="Home" url="/"/></div>
+                <div className={utilStyles.homeButton}><Button name="Home" url="/"/></div>
             </Layout>
         </div>
     );

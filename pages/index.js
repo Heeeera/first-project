@@ -7,8 +7,8 @@ import utilStyles from '../styles/utils.module.css';
 import gitLogo from '../public/github.png';
 
 export default function Home() {
-  const menu = ["💁‍♀️About Me", "🎶Favorites"];
-  const url = ["/information", "/favorite"];
+  const menu = ["💁‍♀️About Me", "🎶Favorites","💖I'm seoyoung"];
+  const url = ["/information", "/favorite", "/seoyoung"];
 
   return (
     <div style={{minHeight:'100vh', display:'flex', alignItems: 'center'}}>

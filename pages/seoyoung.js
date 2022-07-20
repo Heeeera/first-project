@@ -9,7 +9,7 @@ import Link from 'next/link';
 import gitLogo from '../public/github.png';
 
 
-function Information() {
+function Seoyoung() {
     return (
         <div className={utilStyles.mainContainer}>
             <div style={{minHeight:'15vh'}} className={utilStyles.favContainer}>
@@ -41,4 +41,4 @@ function Information() {
     );
 };
 
-export default Information;
+export default Seoyoung;

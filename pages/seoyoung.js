@@ -41,4 +41,5 @@ function Seoyoung() {
     );
 };
 
+
 export default Seoyoung;

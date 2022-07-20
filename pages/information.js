@@ -12,7 +12,7 @@ function Information() {
             </div>
             <Layout home>
                 <div className={utilStyles.contentTitle}>Handong Global University<br/>
-                School of Global Entrepreneurship and ICT</div><br/>
+                </div><br/>
                 
                 <section className={utilStyles.contents}>
                     <div className={utilStyles.contentTitle}>Major</div>

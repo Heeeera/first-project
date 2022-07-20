@@ -8,12 +8,11 @@ import styles from '../components/layout.module.css';
 import Link from 'next/link';
 import gitLogo from '../public/github.png';
 
-
 function Seoyoung() {
     return (
         <div className={utilStyles.mainContainer}>
             <div style={{minHeight:'15vh'}} className={utilStyles.favContainer}>
-                <div> 💖I'm seoyoung</div>
+                <div> 💖I am seoyoung</div>
             </div>
             <div className={styles.container}>
                 <Image className={utilStyles.borderCircle}
@@ -40,6 +39,5 @@ function Seoyoung() {
         </div>
     );
 };
-
 
 export default Seoyoung;

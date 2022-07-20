@@ -11,9 +11,10 @@ function Information() {
                 <div> 💁‍♀️About Me</div>
             </div>
             <Layout home>
-                <div className={utilStyles.contentTitle}>Handong Global University<br/>
-                School of Global Entrepreneurship and ICT</div><br/>
-                
+                <div style={{textAlign: 'center', marginBottom:'3vh'}} className={utilStyles.contentTitle}>
+                    <div>Handong Global University</div>
+                    <div>School of Global Entrepreneurship and ICT</div>
+                </div>                
                 <section className={utilStyles.contents}>
                     <div className={utilStyles.contentTitle}>Major</div>
                     <div>ICT Convergence / Visual and Performing Arts</div>

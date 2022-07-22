@@ -1,31 +1,29 @@
 import Head from 'next/head';
 import Layout from '../components/layout';
 import Button from '../components/Button';
-import utilStyles from '../styles/utils.module.css';
 
-
-function Information() {
+function AboutMe() {
     return (
-        <div className={utilStyles.mainContainer}>
-            <div style={{minHeight:'15vh'}} className={utilStyles.favContainer}>
+        <div className="min-h-screen max-w-screen mx-auto flex flex-col">
+            <div className="flex items-center justify-center h-24 text-2xl font-extrabold">
                 <div> 💁‍♀️About Me</div>
             </div>
             <Layout home>
-                <div style={{textAlign: 'center', marginBottom:'3vh'}} className={utilStyles.contentTitle}>
+                <div className="text-base font-semibold text-center pb-8">
                     <div>Handong Global University</div>
                     <div>School of Global Entrepreneurship and ICT</div>
                 </div>                
-                <section className={utilStyles.contents}>
-                    <div className={utilStyles.contentTitle}>Major</div>
+                <section className="flex flex-col items-center">
+                    <div className="text-sm font-semibold py-3">Major</div>
                     <div>ICT Convergence / Visual and Performing Arts</div>
-                    <div className={utilStyles.contentTitle}>Skills</div>
+                    <div className="text-sm font-semibold py-3">Skills</div>
                     <div>💻 Python, Javascript, HTML, CSS</div>
                     <div>📽️ Premiere Pro, After Effects</div>
                 </section>
-                <div className={utilStyles.homeButton}><Button name="Home" url="/"/></div>
+                <div className="flex justify-center items-center pt-5"><Button name="Home" url="/"/></div>
             </Layout>
         </div>
     );
 };
 
-export default Information;
+export default AboutMe;

@@ -1,51 +1,50 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import food from '../public/main_food.jpg';
 import sea from '../public/main_sea.jpg';
 import musical from '../public/main_musical.jpg';
-import utilStyles from '../styles/utils.module.css';
 import Button from '../components/Button';
 import Layout from '../components/layout';
 
 function Favorite() {
     return (
-        <div style={{margin: '0 auto 0', minHeight: '100vh', maxWidth: '80vw'}}>
-            <div style={{minHeight:'15vh'}} className={utilStyles.favContainer}>
+        <div className="h-screen max-w-screen mx-auto">
+            <div className="flex items-center justify-center h-24 text-2xl font-extrabold">
                 <div> 🎶Favorites </div>
             </div>
-            <div style={{minHeight:'60vh'}} className={utilStyles.favContainer}>
-                <div className={utilStyles.imgContainer}>
+            <div className="flex items-center justify-center max-w-3xl h-3/5 text-2xl font-extrabold mx-auto">
+                <div className="flex flex-col items-center text-center w-1/3">
                     <Image
                         src={food}
-                        className={utilStyles.borderCircle}
+                        className="rounded-full"
                         height={225}
                         width={225}
                         alt="food"
                     />
-                    <div className={utilStyles.txtContainer}><div>Food</div><div>🍽️</div></div>
+                    <div className="mt-3 text-lg font-semibold"><div>Food</div><div>🍽️</div></div>
                 </div>
-                <div className={utilStyles.imgContainer}>
+                <div className="flex flex-col items-center text-center w-1/3">
                     <Image 
                         src={musical}
-                        className={utilStyles.borderCircle}
+                        className="rounded-full"
                         height={225}
                         width={225}
                         alt="musical"
                     />
-                    <div className={utilStyles.txtContainer}><div>Musical</div><div>💃🕺</div></div>
+                    <div className="mt-3 text-lg font-semibold"><div>Musical</div><div>💃🕺</div></div>
                 </div>
-                <div className={utilStyles.imgContainer}>
+                <div className="flex flex-col items-center text-center w-1/3">
                     <Image
                         src={sea}
-                        className={utilStyles.borderCircle}
+                        className="rounded-full"
                         height={225}
                         width={225}
                         alt="sea"
                     />
-                    <div className={utilStyles.txtContainer}><div>Sea</div><div>🌊</div></div>
+                    <div className="mt-3 text-lg font-semibold"><div>Sea</div><div>🌊</div></div>
                 </div>
             </div>
-            <div className={utilStyles.favContainer}>
+            <div className="flex items-center justify-center h-10 text-2xl">
                 <Button name="Home" url="/"/>
             </div>
         </div>

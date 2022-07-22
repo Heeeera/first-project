@@ -1,40 +1,39 @@
 import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 import Layout from '../components/layout';
 import Button from '../components/Button';
-import utilStyles from '../styles/utils.module.css';
 import profile_jsy from '../public/profile_jsy.jpg';
-import Image from 'next/image';
-import styles from '../components/layout.module.css';
-import Link from 'next/link';
 import gitLogo from '../public/github.png';
 
 function Seoyoung() {
     return (
-        <div className={utilStyles.mainContainer}>
-            <div style={{minHeight:'15vh'}} className={utilStyles.favContainer}>
+        <div className="min-h-screen max-w-screen mx-auto flex flex-col">
+            <div className="flex items-center justify-center h-24 text-2xl font-extrabold">
                 <div> 💖I am seoyoung</div>
             </div>
-            <div className={styles.container}>
-                <Image className={utilStyles.borderCircle}
+            <div className="flex flex-col items-center">
+                <Image className="rounded-full"
                     src={profile_jsy}
                     height={144}
                     width={144}
                     alt="img"
                 />
-                <div className={utilStyles.contentTitle}>Handong Global University<br/>
-                School of Global Entrepreneurship and ICT</div><br/>
-                
-                <section className={utilStyles.contents}>
-                    <div className={utilStyles.contentTitle}>Major</div>
+                <div className="text-base font-semibold text-center py-8">
+                    <div>Handong Global University</div>
+                    <div>School of Global Entrepreneurship and ICT</div>
+                </div>                
+                <section className="flex flex-col items-center">
+                    <div className="text-sm font-semibold py-3">Major</div>
                     <div>ICT Convergence / UX Engineering</div>
-                    <div className={utilStyles.contentTitle}>Skills</div>
+                    <div className="text-sm font-semibold py-3">Skills</div>
                     <div>💻 Python, Javascript, HTML, CSS</div>
                     <div>📽️ Figma, Illustrator, Photoshop, Unity</div>
                 </section>
                 <Link href="https://github.com/JeeSeoyoung" passHref>
-                    <a style={{paddingTop:'10px'}}><Image src={gitLogo} height='49' width='49' alt="git"/></a>
+                    <a className="pt-5"><Image src={gitLogo} height='49' width='49' alt="git"/></a>
                 </Link>
-                <div className={utilStyles.homeButton}><Button name="Home" url="/"/></div>
+                <div className="flex justify-center items-center"><Button name="Home" url="/"/></div>
             </div>
         </div>
     );

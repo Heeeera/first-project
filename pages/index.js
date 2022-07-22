@@ -3,25 +3,24 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Layout, { siteTitle } from '../components/layout';
 import Button from '../components/Button';
-import utilStyles from '../styles/utils.module.css';
 import gitLogo from '../public/github.png';
 
 export default function Home() {
   const menu = ["💁‍♀️About Me", "🎶Favorites","💖I'm seoyoung"];
-  const url = ["/information", "/favorite", "/seoyoung"];
+  const url = ["/aboutMe", "/favorite", "/seoyoung"];
 
   return (
-    <div style={{minHeight:'100vh', display:'flex', alignItems: 'center'}}>
+    <div className="flex items-center min-h-screen">
       <Layout home>
         <Head>
           <title>{siteTitle}</title>
         </Head>
-        <section className={utilStyles.headingMd}>
-          <p>Hello, Welcome to my home!</p>
+        <section className="flex flex-col items-center text-lg my-4">
+          <p className="mb-5">Hello, Welcome to my home!</p>
           <p>👋👋👋</p>
-          <div style={{paddingBottom: '20px'}}>{menu.map((data, idx) => <Button key={idx} name={data} url={url[idx]}/>)}</div>
+          <div className="pb-5">{menu.map((data, idx) => <Button key={idx} name={data} url={url[idx]}/>)}</div>
           <Link href="https://github.com/Heeeera" passHref>
-            <a style={{paddingTop:'10px'}}><Image src={gitLogo} height='49' width='49' alt="git"/></a>
+            <a className="pt-3"><Image src={gitLogo} height='49' width='49' alt="git"/></a>
           </Link>
         </section>
       </Layout>

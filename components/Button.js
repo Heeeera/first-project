@@ -7,7 +7,7 @@ const StyledButton = styled.button`
     background-color: white;
     border: 2px solid #FFDEB4;
     border-radius: 10px;
-    margin: 1.25rem 0.625rem 0.652rem;
+    margin: 1.0rem 0.625rem 0.652rem;
     font-size: 0.875rem;
     line-height: 1.25rem;
     &:hover {
